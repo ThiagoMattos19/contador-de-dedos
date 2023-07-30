@@ -26,6 +26,7 @@ while True:
                 print(pontos)
 
         dedos = [8,12,16,20]
+        dedos2 =[6,10,14,18]
         contador = 0
         if points:
             if pontos[4][0] < pontos[2][0]:
@@ -34,10 +35,9 @@ while True:
                 if pontos[x][1] < pontos[x-2][1]:
                     contador +=1
         cv2.rectangle(img,(80,10),(200,100),(255,0,0),-1)
-        cv2.putText(img,str(contador),(100,100),cv2.FONT_HERSHEY_SIMPLEX,4,(255,255,255),5)
-       
-    
+        cv2.putText(img,str(contador),(100,100),cv2.FONT_HERSHEY_SIMPLEX,4,(255,255,255),5)  
+        
 
 
-    cv2.imshow("imagem", img)
+    cv2.imshow("imagem", img,)
     cv2.waitKey(1)
