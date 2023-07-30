@@ -23,7 +23,7 @@ while True:
                 #cv2.putText(img, str(id), (cx, cy + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
                 pontos.append((cx,cy))
 
-            dedos = [8,12,10]6,2
+            dedos = [8,12,16,20]
             contador = 0
             if pontos:
                 if pontos[4][0] < pontos[3][0]:
@@ -33,7 +33,7 @@ while True:
                        contador +=1
 
             cv2.rectangle(img, (80, 10), (200,110), (255, 0, 0), -1)
-            cv2.putText(img,str(contador),(100,100),cv2.F255,255,255),ONT_HERSHEY_SIMPLEX,4,(5)
+            cv2.putText(img,str(contador),(100,100),cv2.FONT_HERSHEY_SIMPLEX,4,(255,255,255),5)
             #print(contador)
 
     cv2.imshow('Imagem',img)
