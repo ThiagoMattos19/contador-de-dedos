@@ -6,7 +6,6 @@ video = cv2.VideoCapture(0)
 
 hand = mp.solutions.hands
 Hand = hand.Hands(max_num_hands=2)
-hand = hand+Hand
 mpDraw = mp.solutions.drawing_utils
 
 while True:
