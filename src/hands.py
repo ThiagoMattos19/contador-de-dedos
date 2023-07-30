@@ -26,7 +26,6 @@ while True:
                 print(pontos)
 
         dedos = [8,12,16,20]
-        dedos2 =[6,10,14,18]
         contador = 0
         if points:
             if pontos[4][0] < pontos[2][0]:
